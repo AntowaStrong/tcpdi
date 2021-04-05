@@ -1,6 +1,6 @@
 <?php
 
-namespace Antowastrong\TCPDI;
+namespace AntowaStrong\TCPDI;
 
 //
 //  FPDF_TPL - Version 1.2.3

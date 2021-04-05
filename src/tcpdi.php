@@ -1,6 +1,6 @@
 <?php
 
-namespace Antowastrong\TCPDI;
+namespace AntowaStrong\TCPDI;
 //  
 //  TCPDI - Version 1.1
 //  Based on FPDI - Version 1.4.4

@@ -1,8 +1,6 @@
 TCPDI
 =====
 
-TEST
-
 Composer ready [TCPDI](https://github.com/pauln/tcpdi) with PDF annotations handling.
 
 PDF importer for [TCPDF](http://www.tcpdf.org/), based on [FPDI](http://www.setasign.de/products/pdf-php-solutions/fpdi/).

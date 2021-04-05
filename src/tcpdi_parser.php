@@ -1,6 +1,6 @@
 <?php
 
-namespace Antowastrong\TCPDI;
+namespace AntowaStrong\TCPDI;
 
 //============================================================+
 // File name   : tcpdi_parser.php

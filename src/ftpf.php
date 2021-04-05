@@ -1,6 +1,6 @@
 <?php
 
-namespace Antowastrong\TCPDI;
+namespace AntowaStrong\TCPDI;
 
 use TCPDF;
 
