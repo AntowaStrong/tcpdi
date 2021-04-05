@@ -2,7 +2,7 @@
 
 namespace AntowaStrong\TCPDI;
 
-//
+//============================================================+
 //  FPDF_TPL - Version 1.2.3
 //
 //    Copyright 2004-2013 Setasign - Jan Slabon
@@ -18,7 +18,7 @@ namespace AntowaStrong\TCPDI;
 //  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
-//
+//============================================================+
 
 class FPDF_TPL extends FPDF {
     /**

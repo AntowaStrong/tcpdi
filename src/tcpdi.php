@@ -1,7 +1,10 @@
 <?php
 
 namespace AntowaStrong\TCPDI;
-//  
+
+use TCPDF_STATIC;
+
+//============================================================+
 //  TCPDI - Version 1.1
 //  Based on FPDI - Version 1.4.4
 //
@@ -18,15 +21,7 @@ namespace AntowaStrong\TCPDI;
 //  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
-//
-
-// Dummy shim to allow unmodified use of fpdf_tpl
-// class FPDF extends TCPDF {}
-
-// require_once('fpdf_tpl.php');
-
-// require_once('tcpdi_parser.php');
-
+//============================================================+
 
 class TCPDI extends FPDF_TPL {
     /**
@@ -269,7 +264,7 @@ class TCPDI extends FPDF_TPL {
 
     /* Wrapper for AddTOC() which tracks TOC position to offset annotations later */
     public function AddTOC($page='', $numbersfont='', $filler='.', $toc_name='TOC', $style='', $color=array(0,0,0)) {
-        if (!\TCPDF_STATIC::empty_string($page)) {
+        if (!TCPDF_STATIC::empty_string($page)) {
             $this->_TOCpagenum = $page;
         } else {
             $this->_TOCpagenum = $this->page;
@@ -568,7 +563,7 @@ class TCPDI extends FPDF_TPL {
                 if ($this->encrypted) {
                     $value[1] = $this->_unescape($value[1]);
                     $value[1] = $this->_encrypt_data($this->_current_obj_id, $value[1]);
-                    $value[1] = \TCPDF_STATIC::_escape($value[1]);
+                    $value[1] = TCPDF_STATIC::_escape($value[1]);
                 }
                 break;
 

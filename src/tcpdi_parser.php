@@ -2,6 +2,8 @@
 
 namespace AntowaStrong\TCPDI;
 
+use TCPDF_FILTERS;
+
 //============================================================+
 // File name   : tcpdi_parser.php
 // Version     : 1.1
@@ -190,7 +192,7 @@ class tcpdi_parser {
         // get length
         $pdflen = strlen($this->pdfdata);
         // initialize class for decoding filters
-        $this->FilterDecoders = new \TCPDF_FILTERS();
+        $this->FilterDecoders = new TCPDF_FILTERS();
         // get xref and trailer data
         $this->xref = $this->getXrefData();
         $this->findObjectOffsets();
