@@ -17,10 +17,8 @@
         	"tecnickcom/tcpdf": "6.2.*"
 	},
 	"autoload": {
-		"classmap": [
-            		"fpdf_tpl.php",
-            		"tcpdi.php",
-            		"tcpdi_parser.php"
-		]
+		"psr-4": {
+			"AntowStrong\\TCPDI\\": "src/"
+		}
 	}
 }
