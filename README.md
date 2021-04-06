@@ -15,7 +15,7 @@ Link package in composer.json, e.g.
 ```json
 {
     "require": {
-        "rafikhaceb/tcpdi": "dev-master"
+        "antowastrong/tcpdi": "dev-master"
     }
 }
 ```
@@ -26,6 +26,10 @@ Usage
 Usage is essentially the same as FPDI, except importing TCPDI rather than FPDI.  It also has a "setSourceData()" function which accepts raw PDF data, for cases where the file does not reside on disk or is not readable by TCPDI.
 
 ```php
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use AntowaStrong\TCPDI\TCPDI;
+
 // Create new PDF document.
 $pdf = new TCPDI(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
@@ -47,6 +51,10 @@ for ($i = 1; $i <= $pagecount; $i++) {
 As of version 1.1, TCPDI also includes additional functionality for handling PDF Annotations.  As annotations are positioned relative to the bleed box rather than the crop box, you'll need to ensure that you're importing the full bleed box; a new function has also been introduced to set the page format (the various boxes, including the crop box) from the imported page, so that the imported page matches the original better.  The following example demonstrates this:
 
 ```php
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use AntowaStrong\TCPDI\TCPDI;
+
 // Create new PDF document.
 $pdf = new TCPDI(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
